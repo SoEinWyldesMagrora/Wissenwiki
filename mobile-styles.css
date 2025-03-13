@@ -1,0 +1,208 @@
+/* Bestehende Styles beibehalten */
+
+/* Allgemeine mobile Anpassungen */
+@media (max-width: 768px) {
+	
+	
+
+    /* HEADER */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: var(--header-bg);
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    /* MAIN CONTAINER */
+    .main-container {
+        margin-top: 80px; /* Header-Höhe anpassen */
+        height: auto;
+        overflow: visible; /* Kein Scrollen mehr notwendig */
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        display: none; /* Sidebar auf kleineren Bildschirmen ausblenden */
+    }
+
+    /* MAIN CONTENT AREA */
+    main {
+        margin-left: 0; /* Sidebar entfällt auf Mobilgeräten */
+        padding: 1rem;
+        height: auto; 
+    }
+
+    /* ARTICLE CONTENT */
+    .article-content {
+        max-width: 100%;
+        margin: 1rem 0;
+        padding: 0;
+        line-height: 1.5;
+    }
+
+    .paragraph {
+        margin-bottom: 1.2em;
+        text-align: justify;
+        text-indent: 1.5em;
+    }
+
+    /* Entry-meta */
+    .entry-meta {
+        display: block;
+        margin: 1rem 0;
+        padding: 1rem;
+        background: #f5f5f5;
+        border-radius: 5px;
+    }
+
+    .entry-meta span {
+        display: block;
+        margin: 0.5rem 0;
+        font-size: 0.9em;
+    }
+
+    /* Reactions */
+    .reactions {
+        margin-top: 2em;
+        background-color: #f0f0f0;
+        padding: 1em;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+    }
+
+    .reactions button {
+        margin: 0.5em;
+        padding: 1em;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .reactions button:hover {
+        background-color: #004999;
+    }
+
+    /* Kommentare */
+    .comments-section {
+        margin-top: 2em;
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .comments-section h3 {
+        margin-bottom: 1em;
+        color: #333;
+    }
+
+    .comment-form {
+        margin-bottom: 2em;
+        background-color: #f0f0f0;
+        padding: 1.5em;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .comment-form textarea {
+        width: 100%;
+        padding: 0.8em;
+        margin-bottom: 1em;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .comment-form button {
+        padding: 0.8em 1.5em;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.1s;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .comment-form button:hover {
+        background-color: #004999;
+    }
+
+    .comment-form button:active {
+        transform: scale(0.98);
+    }
+
+    /* Kommentar */
+    .comment {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .comment p {
+        margin-bottom: 0.5em;
+    }
+
+    .comment-meta {
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    /* FIXED FOOTER */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+    }
+
+}
+
+/* Für größere Bildschirme (Tablet und Desktop) */
+@media (min-width: 769px) {
+
+    /* Anpassungen für größere Bildschirme */
+    .reactions {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reactions button {
+        margin-right: 1em;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 250px;
+        height: calc(100% - 80px);
+        overflow-y: auto;
+    }
+
+    /* Main Content */
+    main {
+        margin-left: 250px;
+        padding: 20px;
+    }
+}

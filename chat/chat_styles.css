@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #313338;
+    --text-color: #ffffff;
+    --secondary-bg: #2b2d31;
+    --input-bg: #383a40;
+    --accent-color: #5865f2;
+    --hover-color: #4752c4;
+    --border-color: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+}
+
+.chat-container {
+    display: flex;
+    height: 100vh;
+}
+
+.channels-list {
+    width: 240px;
+    background-color: var(--secondary-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.channel-header {
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #96989d;
+}
+
+.user-item {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.user-item:hover {
+    background-color: var(--input-bg);
+}
+
+.user-status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-online {
+    background-color: #3ba55c;
+}
+
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: var(--bg-color);
+}
+
+.message {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.message-content {
+    background-color: var(--input-bg);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.input-area {
+    padding: 1rem;
+    background-color: var(--bg-color);
+}
+
+.input-area input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+.input-area input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

@@ -1,0 +1,217 @@
+/* Grundfarben */
+:root {
+  --bg-color: #f8f9fa;
+  --header-bg: #eceff1;
+  --sidebar-bg: #ffffff;
+  --text-color: #212529;
+  --link-color: #0066cc;
+  --link-hover: #004999;
+  --border-color: #e0e0e0;
+  --radius: 4px;
+}
+
+/* Basis-Einstellungen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-form input {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  width: 300px;
+}
+
+.search-form button {
+  background: var(--link-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: var(--link-hover);
+}
+
+/* Haupt-Container */
+.main-container {
+  display: flex;
+  flex: 1;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 1rem;
+  height: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Content-Bereich */
+main {
+  flex: 1;
+  padding: 1rem 2rem;
+  overflow-y: auto;
+}
+
+.wiki-article {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.wiki-article h2 {
+  font-size: 1.5rem;
+  color: var(--link-color);
+}
+
+.wiki-article p {
+  margin-top: 0.5rem;
+}
+
+.entry-meta {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagination-left, .pagination-right {
+    flex: 1;
+}
+
+.pagination-center {
+    flex: 2;
+    text-align: center;
+}
+
+.pagination-right {
+    text-align: right;
+}
+
+.pagination a, .pagination .active {
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.pagination .active {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--header-bg);
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* Responsivität */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .search-form input {
+    width: 100%;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wiki-article h2 {
+    font-size: 1.2rem;
+  }
+
+  .search-form button {
+    padding: 0.5rem;
+  }
+}
