@@ -110,7 +110,7 @@ Du kannst Benutzer erstellen, verwalten und ihnen bestimmte Rechte zuweisen, um 
 
 ## Unterstützung
 
-Wenn du Hilfe bei der Installation oder Verwendung des Wikis benötigst, kannst du dich über [unsere Support-Seite](https://deine-support-seite.de) an uns wenden.
+Wenn du Hilfe bei der Installation oder Verwendung des Wikis benötigst, kannst du dich über [Support Chat](https://chat.magrora.de) an uns wenden.
 
 ## Lizenz
 
