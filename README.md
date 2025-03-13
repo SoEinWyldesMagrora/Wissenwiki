@@ -114,6 +114,6 @@ Wenn du Hilfe bei der Installation oder Verwendung des Wikis benötigst, kannst 
 
 ## Lizenz
 
-Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert.
+Dieses Projekt ist unter der [GNU General Public License v3.0](LICENSE) lizenziert.
 
 Wir hoffen, dass du das Wissenswiki erfolgreich in dein Projekt integrieren kannst. Bei weiteren Fragen oder Anregungen stehen wir jederzeit zur Verfügung!
